@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>IEEE RAIT</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta name="description"
+        content="IEEE is the world’s largest technical professional organization dedicated to advancing technology for the benefit of humanity">
+    <link href="./assets/img/favicon.png" rel="icon" class="favicon">
+    <link href="./assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Bootstrap CSS File -->
+    <link href="./assets/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Libraries CSS Files -->
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css' rel='stylesheet'
+        type='text/css' media='all' />
+    <link href="./assets/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="./assets/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="./assets/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link rel="preload" as="image" href="./assets/img/intro-carousel/6.jpg">
+    <!-- Main Stylesheet File -->
+    <link href="./assets/css/style.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!-- <div id="preloader"></div> -->
+    <!--==========================
+    Header
+  ============================-->
+    <header id="header">
+        <div class="container-fluid">
+            <button type="button" id="mobile-nav-toggle"><i class="fa fa-bars"></i></button>
+            <div id="logo" class="pull-left navbar-brand">
+                <h1><a>IEEE RAIT</a></h1>
+                </ul>
+            </div>
+            <nav id="nav-menu-container">
+                <ul class="nav-menu">
+                    <li><a href="./index.html">Home</a></li>
+                    <li class="menu-active"><a href="#techfest">Techfest</a></li>
+                    <li><a href="/NextWorkshops.html">Upcoming Internships</a></li>
+                    <li><a href="https://medium.com/@ieee-rait">blogs</a></li>
+                    <li><a href="Alumini.html">Alumni</a></li>
+                </ul>
+            </nav>
+            <!-- #nav-menu-container -->
+        </div>
+    </header>
+
+    <main id="main">
+        <section id="intro">
+            <div class="intro-container">
+                <div id="introCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+                    <!-- <ol class="carousel-indicators"></ol> -->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="techfest-background">
+                                <video autoplay loop muted class="w-100">
+                                    <source src="./assets/vid/techfest.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="carousel-container">
+                                <div class="carousel-content">
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScnyTGPCTtLj4LSvZP2uaay0hnZ4CpFEa4qrVuAztkED9mj9Q/viewform"
+                                        target="blank" class="btn-get-started animated fadeInUp delay-2s">Join Us</a>
+                                    <h2 class="display-4 animated fadeInDown delay-2s pt-5">TECHFEST</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#introCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Events -->
+        <section class="events">
+            <div class="container">
+                <div class="grid">
+                    <div class="grid__item">
+                        <div class="card">
+                            <h2 class="card__header">HACKATHON</h2>
+                            <img class="card__img" src="./assets/techfest/event.jpg" alt="Event 1">
+                            <div class="card__content">
+                                <h1 class="card__header">HACKATHON</h1>
+                                <p class="card__text">Datamatics Hackathon</p>
+                                <p class="card__prize">INR 75,000 Prize</p>
+                                <button class="card__btn">Register</button>
+                                <button class="card__btn" onclick="openModal(1)">Explore</button>
+                            </div>
+                            <div class="card__back">
+                                <h2 class="card__header">HACKATHON</h2>
+                                <p class="card__description">
+                                    Join the Datamatics Hackathon and showcase your coding skills! Win exciting prizes
+                                    and network with fellow developers.
+                                </p>
+                                <div class="card__buttons">
+                                    <button class="card__btn">Register</button>
+                                    <button class="card__btn" onclick="openModal(1)">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Event 2 -->
+                    <div class="grid__item">
+                        <div class="card">
+                            <h2 class="card__header">WORKSHOP</h2>
+                            <img class="card__img" src="./assets/techfest/event.jpg" alt="Event 2">
+                            <div class="card__content">
+                                <h1 class="card__header">WORKSHOP</h1>
+                                <p class="card__text">Data Science Workshop</p>
+                                <p class="card__prize">Free Entry</p>
+                                <button class="card__btn">Register</button>
+                                <button class="card__btn" onclick="openModal(2)">Explore</button>
+                            </div>
+                            <div class="card__back">
+                                <h2 class="card__header">WORKSHOP</h2>
+                                <p class="card__description">
+                                    Join our Data Science Workshop and enhance your skills in data analysis and machine
+                                    learning.
+                                </p>
+                                <div class="card__buttons">
+                                    <button class="card__btn">Register</button>
+                                    <button class="card__btn" onclick="openModal(2)">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Event 3 -->
+                    <div class="grid__item">
+                        <div class="card">
+                            <h2 class="card__header">CONFERENCE</h2>
+                            <img class="card__img" src="./assets/techfest/event.jpg" alt="Event 3">
+                            <div class="card__content">
+                                <h1 class="card__header">CONFERENCE</h1>
+                                <p class="card__text">Tech Innovations Conference</p>
+                                <p class="card__prize">Registration Fee: INR 500</p>
+                                <button class="card__btn">Register</button>
+                                <button class="card__btn" onclick="openModal(3)">Explore</button>
+                            </div>
+                            <div class="card__back">
+                                <h2 class="card__header">CONFERENCE</h2>
+                                <p class="card__description">
+                                    Join the Tech Innovations Conference to explore the latest trends and innovations in
+                                    technology.
+                                    Network with industry leaders and gain valuable insights into the future of tech.
+                                </p>
+                                <div class="card__buttons">
+                                    <button class="card__btn">Register</button>
+                                    <button class="card__btn" onclick="openModal(3)">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Event 4 -->
+                    <div class="grid__item">
+                        <div class="card">
+                            <h2 class="card__header">ROBOTICS COMPETITION</h2>
+                            <img class="card__img" src="./assets/techfest/event.jpg" alt="Event 4">
+                            <div class="card__content">
+                                <h1 class="card__header">ROBOTICS COMPETITION</h1>
+                                <p class="card__text">Battle of Bots</p>
+                                <p class="card__prize">Win up to INR 100,000</p>
+                                <button class="card__btn">Register</button>
+                                <button class="card__btn" onclick="openModal(4)">Explore</button>
+                            </div>
+                            <div class="card__back">
+                                <h2 class="card__header">ROBOTICS COMPETITION</h2>
+                                <p class="card__description">Get ready for the ultimate showdown in the Battle of Bots!
+                                    Compete against the best and showcase your
+                                    robotics skills to win exciting prizes.</p>
+                                <div class="card__buttons">
+                                    <button class="card__btn">Register</button>
+                                    <button class="card__btn" onclick="openModal(4)">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Event 5 -->
+                    <div class="grid__item">
+                        <div class="card">
+                            <h2 class="card__header">GAMING TOURNAMENT</h2>
+                            <img class="card__img" src="./assets/techfest/event.jpg" alt="Event 5">
+                            <div class="card__content">
+                                <h1 class="card__header">GAMING TOURNAMENT</h1>
+                                <p class="card__text">Esports Showdown</p>
+                                <p class="card__prize">Cash Prize: INR 50,000</p>
+                                <button class="card__btn">Register</button>
+                                <button class="card__btn" onclick="openModal(5)">Explore</button>
+                            </div>
+                            <div class="card__back">
+                                <h2 class="card__header">GAMING TOURNAMENT</h2>
+                                <p class="card__description">Join the Esports Showdown and compete against top gamers
+                                    from around the world. Test your skills, win
+                                    cash prizes, and claim victory!</p>
+                                <div class="card__buttons">
+                                    <button class="card__btn">Register</button>
+                                    <button class="card__btn" onclick="openModal(5)">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Event 6 -->
+                    <div class="grid__item">
+                        <div class="card">
+                            <h2 class="card__header">STARTUP COMPETITION</h2>
+                            <img class="card__img" src="./assets/techfest/event.jpg" alt="Event 6">
+                            <div class="card__content">
+                                <h1 class="card__header">STARTUP COMPETITION</h1>
+                                <p class="card__text">Pitch Your Startup</p>
+                                <p class="card__prize">Investment Opportunities</p>
+                                <button class="card__btn">Register</button>
+                                <button class="card__btn" onclick="openModal(6)">Explore</button>
+                            </div>
+                            <div class="card__back">
+                                <h2 class="card__header">STARTUP COMPETITION</h2>
+                                <p class="card__description">Pitch Your Startup and grab the attention of potential
+                                    investors. Showcase your innovative ideas and
+                                    stand a chance to secure funding for your venture.</p>
+                                <div class="card__buttons">
+                                    <button class="card__btn">Register</button>
+                                    <button class="card__btn" onclick="openModal(6)">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Event 7 -->
+                    <div class="grid__item">
+                        <div class="card">
+                            <h2 class="card__header">NETWORKING SESSION</h2>
+                            <img class="card__img" src="./assets/techfest/event.jpg" alt="Event 7">
+                            <div class="card__content">
+                                <h1 class="card__header">NETWORKING SESSION</h1>
+                                <p class="card__text">Connect with Experts</p>
+                                <p class="card__prize">Limited Seats</p>
+                                <button class="card__btn">Register</button>
+                                <button class="card__btn" onclick="openModal(7)">Explore</button>
+                            </div>
+                            <div class="card__back">
+                                <h2 class="card__header">NETWORKING SESSION</h2>
+                                <p class="card__description">Connect with Industry Experts and expand your professional
+                                    network. Gain valuable insights, exchange
+                                    ideas, and explore collaboration opportunities.</p>
+                                <div class="card__buttons">
+                                    <button class="card__btn">Register</button>
+                                    <button class="card__btn" onclick="openModal(7)">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Event 8 -->
+                    <div class="grid__item">
+                        <div class="card">
+                            <h2 class="card__header">VIRTUAL REALITY EXPERIENCE</h2>
+                            <img class="card__img" src="./assets/techfest/event.jpg" alt="Event 8">
+                            <div class="card__content">
+                                <h1 class="card__header">VIRTUAL REALITY EXPERIENCE</h1>
+                                <p class="card__text">Immerse Yourself in VR</p>
+                                <p class="card__prize">Free Entry</p>
+                                <button class="card__btn">Register</button>
+                                <button class="card__btn" onclick="openModal(8)">Explore</button>
+                            </div>
+                            <div class="card__back">
+                                <h2 class="card__header">VIRTUAL REALITY EXPERIENCE</h2>
+                                <p class="card__description">Step into the world of Virtual Reality and experience
+                                    immersive environments like never before. Dive
+                                    into virtual worlds, explore new dimensions, and unleash your imagination!</p>
+                                <div class="card__buttons">
+                                    <button class="card__btn">Register</button>
+                                    <button class="card__btn" onclick="openModal(8)">Explore</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Modals for each event -->
+        <!-- Modal 1 -->
+        <section class="modals">
+            <div id="myModal1" class="modal">
+                <div class="modal-content">
+                    <span class="close close1">&times;</span>
+                    <div class="modal-flex">
+                        <img class="modal-img" src="./assets/techfest/event.jpg" alt="Event 1">
+                        <div class="modal-text">
+                            <h2>HACKATHON</h2>
+                            <p>Join the Datamatics Hackathon and showcase your coding skills! Win exciting prizes and
+                                network with
+                                fellow developers.</p>
+                            <button class="card__btn">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal 2 -->
+            <div id="myModal2" class="modal">
+                <div class="modal-content">
+                    <span class="close close2">&times;</span>
+                    <div class="modal-flex">
+                        <img class="modal-img" src="./assets/techfest/spider.jpg" alt="Event 2">
+                        <div class="modal-text">
+                            <h2>WORKSHOP</h2>
+                            <p>Join our Data Science Workshop and enhance your skills in data analysis and machine
+                                learning.</p>
+                            <button class="card__btn">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal 3 -->
+            <div id="myModal3" class="modal">
+                <div class="modal-content">
+                    <span class="close close3">&times;</span>
+                    <div class="modal-flex">
+                        <img class="modal-img" src="./assets/techfest/event.jpg" alt="Event 3">
+                        <div class="modal-text">
+                            <h2>CONFERENCE</h2>
+                            <p>Join the Tech Innovations Conference to explore the latest trends and innovations in
+                                technology.
+                                Network with industry leaders and gain valuable insights into the future of tech.</p>
+                            <button class="card__btn">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal 4 -->
+            <div id="myModal4" class="modal">
+                <div class="modal-content">
+                    <span class="close close4">&times;</span>
+                    <div class="modal-flex">
+                        <img class="modal-img" src="./assets/techfest/event.jpg" alt="Event 4">
+                        <div class="modal-text">
+                            <h2>ROBOTICS COMPETITION</h2>
+                            <p>Get ready for the ultimate showdown in the Battle of Bots! Compete against the best and
+                                showcase your
+                                robotics skills to win exciting prizes.</p>
+                            <button class="card__btn">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal 5 -->
+            <div id="myModal5" class="modal">
+                <div class="modal-content">
+                    <span class="close close5">&times;</span>
+                    <div class="modal-flex">
+                        <img class="modal-img" src="./assets/techfest/event.jpg" alt="Event 5">
+                        <div class="modal-text">
+                            <h2>GAMING TOURNAMENT</h2>
+                            <p>Join the Esports Showdown and compete against top gamers from around the world. Test your
+                                skills, win
+                                cash prizes, and claim victory!</p>
+                            <button class="card__btn">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal 6 -->
+            <div id="myModal6" class="modal">
+                <div class="modal-content">
+                    <span class="close close6">&times;</span>
+                    <div class="modal-flex">
+                        <img class="modal-img" src="./assets/techfest/event.jpg" alt="Event 6">
+                        <div class="modal-text">
+                            <h2>STARTUP COMPETITION</h2>
+                            <p>Pitch Your Startup and grab the attention of potential investors. Showcase your
+                                innovative ideas and
+                                stand a chance to secure funding for your venture.</p>
+                            <button class="card__btn">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal 7 -->
+            <div id="myModal7" class="modal">
+                <div class="modal-content">
+                    <span class="close close7">&times;</span>
+                    <div class="modal-flex">
+                        <img class="modal-img" src="./assets/techfest/event.jpg" alt="Event 7">
+                        <div class="modal-text">
+                            <h2>NETWORKING SESSION</h2>
+                            <p>Connect with Industry Experts and expand your professional network. Gain valuable
+                                insights, exchange
+                                ideas, and explore collaboration opportunities.</p>
+                            <button class="card__btn">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal 8 -->
+            <div id="myModal8" class="modal">
+                <div class="modal-content">
+                    <span class="close close8">&times;</span>
+                    <div class="modal-flex">
+                        <img class="modal-img" src="./assets/techfest/event.jpg" alt="Event 8">
+                        <div class="modal-text">
+                            <h2>VIRTUAL REALITY EXPERIENCE</h2>
+                            <p>Step into the world of Virtual Reality and experience immersive environments like never
+                                before. Dive
+                                into virtual worlds, explore new dimensions, and unleash your imagination!</p>
+                            <button class="card__btn">Register</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <script type="text/javascript">
+            function openModal(eventId) {
+                var modalId = "myModal" + eventId;
+                var modal = document.getElementById(modalId);
+                modal.style.display = "block";
+            }
+
+            // Add event listeners for closing each modal
+            document.querySelector('.close1').addEventListener('click', function () {
+                document.getElementById('myModal1').style.display = "none";
+            });
+            document.querySelector('.close2').addEventListener('click', function () {
+                document.getElementById('myModal2').style.display = "none";
+            });
+            document.querySelector('.close3').addEventListener('click', function () {
+                document.getElementById('myModal3').style.display = "none";
+            });
+            document.querySelector('.close4').addEventListener('click', function () {
+                document.getElementById('myModal4').style.display = "none";
+            });
+            document.querySelector('.close5').addEventListener('click', function () {
+                document.getElementById('myModal5').style.display = "none";
+            });
+            document.querySelector('.close6').addEventListener('click', function () {
+                document.getElementById('myModal6').style.display = "none";
+            });
+            document.querySelector('.close7').addEventListener('click', function () {
+                document.getElementById('myModal7').style.display = "none";
+            });
+            document.querySelector('.close8').addEventListener('click', function () {
+                document.getElementById('myModal8').style.display = "none";
+            });
+
+            // Add event listeners for closing modals when clicking outside the modal
+            var modals = document.querySelectorAll('.modal');
+            modals.forEach(function (modal) {
+                modal.addEventListener('click', function (event) {
+                    if (event.target === modal) {
+                        modal.style.display = "none";
+                    }
+                });
+            });
+        </script>
+
+        <!-- Counts -->
+        <section id="counter" class="wow fadeIn pb-3 d-flex justify-content-center">
+            <div class="container">
+                <header class="section-header">
+                    <h3>Our Reach</h3>
+                    <!-- <p>IEEE has seen increasing progress ever since its establishment in the institute. Each year proves
+                        more successful than the previous.</p> -->
+                </header>
+                <div class="row counters mb-5">
+                    <div class="col-lg-4 col-6 content text-center">
+                        <ul>
+                            <li>
+                                <div class="count-numbers" data-count="250">25
+                                </div>
+                            </li>
+                            <li>
+                                <p class="plus">K+</p>
+                            </li>
+                        </ul>
+                        <p class="lead" style="font-size: 20px ;color: #111">Prize Money</p>
+                    </div>
+                    <div class="col-lg-4 col-6 content text-center">
+                        <ul>
+                            <li>
+                                <div class="count-numbers" data-count="250">25
+                                </div>
+                            </li>
+                            <li>
+                                <p class="plus">+</p>
+                            </li>
+                        </ul>
+                        <p class="lead" style="font-size: 20px ;color: #111;">Competition</p>
+                    </div>
+                    <div class="col-lg-4 col-xs-12 content text-center">
+                        <ul>
+                            <li>
+                                <div class="count-numbers" data-count="2500">25
+                                </div>
+                            </li>
+                            <li>
+                                <p class="plus">+</p>
+                            </li>
+                        </ul>
+                        <p class="lead" style="font-size: 20px;color: #111">Participant</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- <footer> -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12 footer-info">
+                        <h3>IEEE</h3>
+                        <p>IEEE is the world’s largest technical professional organization dedicated to advancing
+                            technology for the benefit of humanity. </p>
+                    </div>
+                    <div class="col-lg-4 col-md-12 footer-contact">
+                        <h4>Contact Us</h4>
+                        <p>
+                            Dr DY Patil Vidyanagar
+                            <br> Sector 7 Nerul
+                            <br> Maharashtra 400706 .
+                            <br>
+                            <strong>Phone:</strong><a href="tel:9834377904"> 9834377904 </a><a href="tel:9082126459">/
+                                9082126459</a>
+                            <br>
+                            <strong>Email:</strong><a href="mailto:ieee.rait@rait.ac.in"> ieee.rait@rait.ac.in</a>
+                            <br>
+                        </p>
+                        <div class="social-links">
+                            <a href="https://www.instagram.com/p/BmEHwx8FE0Q/?hl=en" class="instagram  hvr-icon-grow"><i
+                                    class="fab fa-instagram hvr-icon"></i></a>
+                            <a href="https://www.facebook.com/ieeerait/" class="facebook  hvr-icon-grow"><i
+                                    class="fab fa-facebook hvr-icon"></i></a>
+                            <a href="https://www.linkedin.com/in/ieee-rait-37823a193/"
+                                class="linkedin  hvr-icon-grow"><i class="fab fa-linkedin hvr-icon"></i></a>
+                            <a href="https://www.youtube.com/@ieeerait6313" target="blank" class="hvr-icon-grow">
+                                <i class='fab fa-youtube' style='font-size:24px'></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-12">
+                        <img src="./assets/img/footer2.png" class="align-top img-fluid"
+                            style="margin-left: auto;width: 400px;height:auto; object-fit: cover;overflow:visible;"
+                            alt="footer">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    &copy; Copyright <strong>IEEE RAIT 2023</strong>. All Rights Reserved
+                </div>
+                <div class="credits">
+                    Designed by <a href="https://www.linkedin.com/in/swaraj-panchal-6aa398224" target="blank">Swaraj
+                        Panchal </a>
+                    , <a href="https://www.linkedin.com/in/bhargav-dhumal-a6570b21a/" target="blank"> Bhargav Dhumal
+                    </a>
+                    and <a href="https://www.linkedin.com/in/ganesh-choudhary-9845a8247/" target="blank"> Ganesh
+                        Choudhary </a>
+                </div>
+            </div>
+    </footer>
+    <a href="#" class="back-to-top hvr-icon-up"><i class="fas fa-chevron-up hvr-icon"></i></a>
+
+    <script src="./assets/lib/jquery/jquery.min.js"></script>
+    <script src="./assets/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/lib/easing/easing.min.js"></script>
+    <script src="./assets/lib/superfish/superfish.min.js"></script>
+    <script src="./assets/lib/wow/wow.min.js"></script>
+    <script src="./assets/lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="./assets/lib/lightbox/js/lightbox.min.js"></script>
+    <script src="./assets/lib/touchSwipe/jquery.touchSwipe.min.js"></script>
+    <script src="./assets/js/main.min.js"></script>
+</body>
+
+</html>
