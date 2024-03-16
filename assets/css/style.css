@@ -183,42 +183,41 @@ h6 {
 # Intro Section
 --------------------------------------------------------------*/
 #intro {
-    display: table;
-    width: 100%;
-    height: 100vh;
-    background: #000;
+  display: table;
+  width: 100%;
+  height: 100vh;
+  background: #000;
 }
 
 #intro .carousel-item {
-    width: 100%;
-    height: 100vh;
-    position: relative; 
+  width: 100%;
+  height: 100vh;
+  position: relative;
 }
 
 .techfest-background video {
-    width: 100%;
-    height: 100vh; 
-    object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 
 #intro .carousel-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 #intro .carousel-content {
-    position: relative; 
-    z-index: 1;
-    text-align: center; 
-    color: #fff;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: #fff;
 }
-
 
 #intro h2 {
   color: #fff;
@@ -448,7 +447,7 @@ h6 {
   padding-top: 18px;
   bottom: 0;
   z-index: 998;
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.7);
   left: -260px;
   width: 260px;
   overflow-y: auto;
@@ -594,7 +593,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 .events {
-  background: url("../techfest/web.jpg") center top no-repeat fixed;
+  background: url("../techfest/techfestbg.jpg") center top no-repeat fixed;
   background-size: cover;
   padding: 160px 0 160px 0;
   position: relative;
@@ -607,8 +606,18 @@ body.mobile-nav-active #mobile-nav-toggle {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.8);
   z-index: 9;
+}
+
+.event-header h3 {
+  font-size: 40px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  font-weight: 400;
+  padding-bottom: 15px;
+  padding-top: 30px;
 }
 
 .events .container {
@@ -622,7 +631,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   gap: 40px;
 }
 
-.grid-item{
+.grid-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -635,20 +644,21 @@ body.mobile-nav-active #mobile-nav-toggle {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   border: 1px solid #0056b3;
+  color: white;
   backdrop-filter: blur(5.5px);
   background: hsla(0, 0%, 100%, 0.3);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.5s;
-  height: 500px; /* Add this line */
+  height: 400px; /* Add this line */
   overflow: auto; /* Add this line if you want to enable scrolling when the content exceeds the card height */
 }
 
-
 .card__header {
   position: relative;
-  font-size: 1.2rem;
+  padding-top: 10px;
+  font-size: 1rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -667,13 +677,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 .card__text {
-  font-size: 1rem;
+  font-size: 0.8rem;
   margin-bottom: 15px;
 }
 
 .card__prize {
   font-weight: bold;
-  color: #00000070;
+  color: rgba(255, 255, 255, 0.687);
   font-size: 0.8rem;
 }
 
@@ -683,15 +693,15 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 2px solid #00a8f4;
   color: #fff;
   border: none;
-  padding: 10px 20px;
+  padding: 6px 12px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
 .card__btn:hover {
   background-color: rgba(144, 226, 242, 0.7);
-  color: #0056b3; 
-  border-color: rgba(3, 168, 244, 0.627); 
+  color: #0056b3;
+  border-color: rgba(3, 168, 244, 0.627);
 }
 
 .card__back {
@@ -700,11 +710,11 @@ body.mobile-nav-active #mobile-nav-toggle {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background-color: #000;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; 
+  flex-direction: column;
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s;
@@ -721,142 +731,143 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .card:hover .card__back {
   opacity: 1;
+  color: #fff;
   visibility: visible;
 }
 
 .card__description {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   padding: 10px;
   text-align: center;
 }
 
 .modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto; 
-    background-color: rgba(0, 0, 0, 0.4); 
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* Modal Content */
 .modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%; 
-    max-height: 80%; 
-    overflow-y: auto; 
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+  background-color: #000;
+  margin: auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-height: 80%;
+  overflow-y: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.modal-flex{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+.modal-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
 .modal-img {
-    padding: 10px; /* Adjust as needed */
-    max-width: 90%; /* Adjust as needed */
-    object-fit: contain;
-    margin: auto; /* Center the image */
+  padding: 10px; /* Adjust as needed */
+  max-width: 90%; /* Adjust as needed */
+  object-fit: contain;
+  margin: auto; /* Center the image */
 }
 
 .modal-text {
-    padding-left: 20px;
-    width: 100%;
-    text-align: center; /* Align the text in the center */
+  padding-left: 20px;
+  color: #fff;
+  width: 100%;
+  text-align: center; /* Align the text in the center */
 }
 
 .close {
-    color: black;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
+.text-left {
+    text-align: left;
+}
+
 
 .close:hover,
 .close:focus {
-    color: red; 
-    text-decoration: none;
-    cursor: pointer;
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 @media (min-width: 900px) {
-    .modal-flex {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
+  .modal-flex {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .modal-img, .modal-text {
-        max-width: 45%;
-    }
+  .modal-img,
+  .modal-text {
+    max-width: 45%;
+  }
 }
 
-/* Counts */
-/* #counter {
-  text-align: inline-block;
+/* Event-Counter */
+#event-counter {
+  background: url("../techfest/techfestbg.jpg") center top no-repeat fixed;
+  background-size: cover;
+  padding: 60px 0 0 0;
+  position: relative;
 }
 
-.counters {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-gap: 20px;
-  justify-content: center; 
-}
-
-.counter-list {
+#event-counter::before {
+  content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.counter-list li {
-  display: inline;
-}
-
-@media (max-width: 767px) {
-  .counters {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  }
-}
-
-@keyframes rotateAnimation {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-} */
-
-/* .image-container {
-  width: 100%;
-  overflow: hidden;
-}
-
-.bg-image {
-  position: absolute;
-  top: 0;
   left: 0;
-  width: 80%;
-  -webkit-animation: rotateAnimation 2s linear infinite;
-  animation: rotateAnimation 2s linear infinite;
-}*/
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 9;
+}
+
+#event-counter .container {
+  background: rgba(0, 0, 0, 0.7);
+  position: relative;
+  z-index: 10;
+}
+
+#event-counter .counters .count-numbers,
+.plus {
+  font-size: 40px;
+  margin-bottom: 0;
+  display: block;
+  color: #03a9f4;
+}
+#event-counter .content ul {
+  margin-bottom: 0;
+  padding: 0;
+}
+#event-counter .content li {
+  display: inline-block;
+  margin-left: 3px;
+}
+
+#event-counter .counters .count-numbers p {
+  display: block;
+  font-size: 20px;
+}
+
+#event-counter .counter-img {
+  text-align: center;
+  padding-top: 30px;
+}
 
 @keyframes rotateAnimation {
   0% {
@@ -865,8 +876,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   100% {
     transform: rotate(360deg);
   }
-} 
-
+}
 
 /* #counts{
   -webkit-animation: rotateAnimation 2s linear infinite;
@@ -988,7 +998,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #counter {
-  background: url("../techfest/web.jpg") center top no-repeat fixed;
+  background: url("../img/teamsbg.png") center top no-repeat fixed;
   background-size: cover;
   padding: 60px 0 0 0;
   position: relative;
@@ -1030,12 +1040,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   display: block;
   font-size: 20px;
 }
-/*#counter .counters p {
-  padding: 0;
-  margin: 0 0 20px 0;
-  font-size: 14px;
-  color: #111;
-}*/
 
 #counter .counter-img {
   text-align: center;
@@ -1047,6 +1051,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   width: 200px;
   box-shadow: 0 4px 10px #666;
 }
+
 /* Call To Action Section
 --------------------------------*/
 
