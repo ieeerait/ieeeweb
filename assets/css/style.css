@@ -627,14 +627,28 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  grid-template-columns: repeat(1, 1fr);
+}
+
+@media (min-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 991px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .grid-item {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
 }
 
 .card {
@@ -651,8 +665,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.5s;
-  height: 400px; /* Add this line */
-  overflow: auto; /* Add this line if you want to enable scrolling when the content exceeds the card height */
+  overflow: auto;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .card__header {
@@ -795,9 +810,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-weight: bold;
 }
 .text-left {
-    text-align: left;
+  text-align: left;
 }
-
 
 .close:hover,
 .close:focus {
